@@ -17,14 +17,18 @@ html {box-sizing: border-box;}
 body {
   margin:0; 
   font-family: var(--primary-font);
-  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   font-size: 12px;
+  color: var(--primary-font-color);
+
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   background-size: cover;
 }
 
 .page-wrapper {
   min-height: 100vh;
+  overflow-x: hidden;
 }
+
 
 
 /* generics */
@@ -36,18 +40,74 @@ body {
   align-items: center;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  all: unset; /* compatibility */
+}
+
 
 
 /* FAQ card */
 /*================================================*/
 
-.faq-content {
+.faq-card {
 
-  background-color: hsl(240, 5%, 91%); /* Light grayish blue */
+  background-color: #fff;
   border-radius: 20px;
 
-  padding: 2rem;
-  width: 90%;
+  width: 85%;
+  margin-top: 110px;
 }
 
-.accordion: fo
+
+/* FAQ card: imagenes */
+/*================================================*/
+
+img{
+  margin: 0 auto;
+  display: block;
+}
+
+.faq-ilustrations{
+  position: relative;
+}
+
+.faq-ilustrations .ilust{
+  position: absolute;
+  top:-110px;
+  left:-30px;
+  right: 0;
+}
+
+.desktop{
+  display: none;
+}
+
+/* FAQ card: main */
+/*================================================*/
+
+.faq-content {
+  padding: 0 25px;  
+}
+
+.faq-content h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+
+
+.faq-accordion:focus-within {
+  background-color: red;
+}
+
+/* title */
+
+.faq-accordion-title h2{
+  font-size: 12px;
+  font-weight: 400;
+  
+}
