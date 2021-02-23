@@ -2,9 +2,52 @@
 
 :root{
   --primary-font: 'Kumbh Sans', sans-serif;
+  --primary-font-color: hsl(238, 29%, 16%);
+  --second-font-color: hsl(14, 88%, 65%);
 }
 
 
 html {box-sizing: border-box;}
 * {box-sizing: inherit;}
-body {margin:0; font-family: var(--primary-font) ;}
+
+/* global */
+/*================================================*/
+
+
+body {
+  margin:0; 
+  font-family: var(--primary-font);
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-size: 12px;
+  background-size: cover;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
+
+
+/* generics */
+/*================================================*/
+
+.content-cc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* FAQ card */
+/*================================================*/
+
+.faq-content {
+
+  background-color: hsl(240, 5%, 91%); /* Light grayish blue */
+  border-radius: 20px;
+
+  padding: 2rem;
+  width: 90%;
+}
+
+.accordion: fo
