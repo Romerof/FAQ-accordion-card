@@ -15,7 +15,9 @@
 }
 
 
-html {box-sizing: border-box;}
+html {
+  box-sizing: border-box;
+}
 * {box-sizing: inherit;}
 
 .attribution { 
@@ -36,7 +38,7 @@ html {box-sizing: border-box;}
 
 
 body {
-  margin:0; 
+  margin:0;
   font-family: var(--principal-font);
   font-size: 12px;
   color: var(--neutral-dark-color);
@@ -86,7 +88,7 @@ h2 {
   .faq-card {
     display:flex;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 0;
     max-width: 900px;
     min-height: 500px;
     box-shadow: 0px 60px 50px -25px rgba(0, 0, 0, 0.35);
@@ -185,7 +187,6 @@ img{
     right: 60px;
   }
 
-  /* bottom 110, left -125*/
   .flotant {
     right: 350px;
   }
@@ -195,7 +196,7 @@ img{
 /*================================================*/
 
 .faq-content {
-  padding: 9px 25px 3rem;  
+  padding: 9px 25px 3rem; 
 }
 
 .faq-content h1 {
@@ -212,7 +213,7 @@ img{
 @media only screen and (min-width: 768px) {
   .faq-content{
     max-width: 370px;
-    padding: 3rem 2rem;
+    padding: 1rem 2rem 2rem;
   }
 
   .faq-content h1 {
