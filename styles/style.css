@@ -51,8 +51,13 @@ body {
   padding-top: 1rem;
 }
 
-h2, p {
-  margin: 0;
+p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+h2 {
+  margin: 12px 0;
 }
 
 
@@ -87,6 +92,8 @@ h2, p {
     box-shadow: 0px 60px 50px -25px rgba(0, 0, 0, 0.35);
   }
 }
+
+/* hover effect in effects */
 
 /* FAQ card: imagenes */
 /*================================================*/
@@ -123,7 +130,7 @@ img{
     display: none;
   }
 
-  .desktop{
+  .desktop:not(.flotant){
     display: block;
     max-width: unset;
   }
@@ -144,46 +151,68 @@ img{
 
   .pattern{
     top: -60%;
+    right:0;
+  }
+  
+  .ilust:not(.flotant) {
+    top: 70px;
+    right: 0;
+  }
+
+  
+  
+  
+}
+
+@media only screen and (min-width: 890px) {
+
+  /* bottom 110, left -125*/
+  .flotant {
+    display: block;
+    top: 205px;
+    right: 290px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .pattern{
     right:60px;
   }
   
   .ilust:not(.flotant) {
-    margin: auto;
-    top: 0px;
+    top: 70px;
     right: 60px;
-    bottom: 0px;
   }
 
   /* bottom 110, left -125*/
   .flotant {
-    bottom: 110px;
-    left: -90px;
+    right: 350px;
   }
-
 }
 
 /* FAQ card: main */
 /*================================================*/
 
 .faq-content {
-  padding: 0 25px 25px;  
+  padding: 9px 25px 3rem;  
 }
 
 .faq-content h1 {
-  font-size: 32px;
+  font-size: 34px;
   text-align: center;
   color: var(--primary-dark-color);
 }
 
 .faq-accordion {
-  padding: 1.2rem;
+  padding: 8px 0;
   border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
 @media only screen and (min-width: 768px) {
   .faq-content{
-    max-width: 365px;
-    padding: 1rem;
+    max-width: 370px;
+    padding: 0 2rem 2rem;
   }
 
   .faq-content h1 {
@@ -209,7 +238,6 @@ input.tgg-title {
 .faq-accordion-title h2{
   font-size: 13px /*var(--font-size)*/;
   font-weight: 400;
-  margin:;
   color: var(--neutral-dark-color);
 }
 
@@ -235,6 +263,7 @@ input.tgg-title {
 @media only screen and (min-width: 768px) {
   .faq-accordion-title h2 {
     font-size: 14px;
+    color: var(--primary-dark-color)
   }
 }
 
@@ -243,7 +272,6 @@ input.tgg-title {
 
 .faq-accordion-content {
   color: var(--neutral-soft-color);
-  line-height: 1.5;
   overflow: hidden;
   max-height: 0;
   transition: max-height .4s ease-in-out;
@@ -252,4 +280,13 @@ input.tgg-title {
 .faq-accordion .tgg-title:checked ~ .faq-accordion-content{
   will-change: max-height;
   max-height: 80px;
+}
+
+
+/* Effects */
+/*================================================*/
+
+/* FAQ card */
+.faq-card:hover {
+
 }
