@@ -15,15 +15,24 @@
 
 <body>
 
-  <div class="page-wrapper  | content-cc">
+  <div class="card-wrapper  | content-cc">
     <div class="faq-card">
 
       <div class="faq-ilustrations">
-        <img class="desktop pattern" src="images/bg-pattern-desktop.svg" type="img/svg+xml"></img>
+
+        <!-- mobile -->
         <img class="mobile pattern" src="images/bg-pattern-mobile.svg" type="img/svg+xml"></img>
-        <img class="desktop ilust" src="images/illustration-woman-online-desktop.svg" type="img/svg+xml"></img>
-        <img class="desktop ilust" src="images/illustration-box-desktop.svg" type="img/svg+xml"></img>
         <img class="mobile ilust" src="images/illustration-woman-online-mobile.svg" type="img/svg+xml"></img>
+        <!-- mobile -->
+
+        <!-- desktop -->
+        <div class="img-desk-wrapper">
+          <img class="desktop pattern" src="images/bg-pattern-desktop.svg" type="img/svg+xml"></img>
+          <img class="desktop ilust" src="images/illustration-woman-online-desktop.svg" type="img/svg+xml"></img>
+        </div>
+        <img class="desktop ilust flotant" src="images/illustration-box-desktop.svg" type="img/svg+xml"></img>
+        <!-- desktop -->
+
       </div>
 
       <main class="faq-content">
@@ -139,10 +148,12 @@
 
         </div> <!-- faq articles -->
 
-      </main>
-    </div> <!-- faq content -->
-  </div> <!-- page wrappe -->
+      </main> <!-- faq -->
 
+    </div> <!-- faq card -->
+
+  </div> <!-- card wrapper -->
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Javier Romero</a>.
