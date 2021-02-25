@@ -86,7 +86,7 @@ h2 {
   .faq-card {
     display:flex;
     align-items: center;
-    margin: 0;
+    margin-top: 1rem;
     max-width: 900px;
     min-height: 500px;
     box-shadow: 0px 60px 50px -25px rgba(0, 0, 0, 0.35);
@@ -212,7 +212,7 @@ img{
 @media only screen and (min-width: 768px) {
   .faq-content{
     max-width: 370px;
-    padding: 0 2rem 2rem;
+    padding: 3rem 2rem;
   }
 
   .faq-content h1 {
@@ -246,19 +246,6 @@ input.tgg-title {
   transition: transform .4s ease-in-out;
 }
 
-.faq-accordion-title:hover h2{
-  color: var(--primary-soft-color)
-}
-
-/* onclick "" */
-.faq-accordion .tgg-title:checked + div>label>h2 {
-  font-weight: 700;
-}
-
-.faq-accordion .tgg-title:checked + div>label>span {
-  will-change: transform;
-  transform: rotate(180deg);
-}
 
 @media only screen and (min-width: 768px) {
   .faq-accordion-title h2 {
@@ -277,16 +264,56 @@ input.tgg-title {
   transition: max-height .4s ease-in-out;
 }
 
+
+/* Effects */
+/*================================================*/
+
+/* FAQ card, hover effect */
+
+.faq-card,
+.faq-card .faq-ilustrations .flotant
+{
+  transition: 
+    margin .4s ease-out,
+    right .4s ease-out
+  ;
+}
+
+.faq-card:hover {
+  margin-right: 25px;
+}
+
+.faq-card:hover .flotant {
+  right: 328px;
+}
+  @media only screen and (min-width: 1024px) {
+    .faq-card:hover .flotant {
+      right: 388px;
+    }
+  }
+
+
+/* main title, accordion title effects */
+
+.faq-accordion-title:hover h2{
+  color: var(--primary-soft-color)
+}
+
+/* onclick "" */
+.faq-accordion .tgg-title:checked + div>label>h2 {
+  font-weight: 700;
+}
+
+.faq-accordion .tgg-title:checked + div>label>span {
+  will-change: transform;
+  transform: rotate(180deg);
+}
+
+
+/* main content, acordion text effect */
+
 .faq-accordion .tgg-title:checked ~ .faq-accordion-content{
   will-change: max-height;
   max-height: 80px;
 }
 
-
-/* Effects */
-/*================================================*/
-
-/* FAQ card */
-.faq-card:hover {
-
-}
