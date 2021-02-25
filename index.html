@@ -1,163 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/style.css">
 
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <title>Frontend Mentor | FAQ Accordion Card</title>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <div class="card-wrapper  | content-cc">
-    <div class="faq-card">
+    <div class="card-wrapper | content-cc">
+      <div class="faq-card">
 
-      <div class="faq-ilustrations">
+        <div class="faq-ilustrations">
 
-        <!-- mobile -->
-        <img class="mobile pattern" src="images/bg-pattern-mobile.svg" type="img/svg+xml"></img>
-        <img class="mobile ilust" src="images/illustration-woman-online-mobile.svg" type="img/svg+xml"></img>
-        <!-- mobile -->
+          <!-- mobile -->
+          <object class="mobile pattern" data="images/bg-pattern-mobile.svg"
+            type="image/svg+xml"></object>
+          <object class="mobile ilust"
+            data="images/illustration-woman-online-mobile.svg"
+            type="image/svg+xml"></object>
+          <!-- mobile -->
 
-        <!-- desktop -->
-        <div class="img-desk-wrapper">
-          <img class="desktop pattern" src="images/bg-pattern-desktop.svg" type="img/svg+xml"></img>
-          <img class="desktop ilust" src="images/illustration-woman-online-desktop.svg" type="img/svg+xml"></img>
+          <!-- desktop -->
+          <div class="img-desk-wrapper">
+            <object class="desktop pattern" data="images/bg-pattern-desktop.svg"
+              type="image/svg+xml"></object>
+            <object class="desktop ilust"
+              data="images/illustration-woman-online-desktop.svg"
+              type="image/svg+xml"></object>
+          </div>
+          <object class="desktop ilust flotant"
+            data="images/illustration-box-desktop.svg" type="image/svg+xml"></object>
+          <!-- desktop -->
+
         </div>
-        <img class="desktop ilust flotant" src="images/illustration-box-desktop.svg" type="img/svg+xml"></img>
-        <!-- desktop -->
 
-      </div>
+        <main class="faq-content">
+          <h1>FAQ</h1>
 
-      <main class="faq-content">
-        <h1>FAQ</h1>
+          <div class="faq-articles">
 
-        <div class="faq-articles">
+            <article class="faq-accordion">
 
-          <article class="faq-accordion">
+              <input type="checkbox" class="tgg-title" id="tgg-title-1">
 
-            <input type= "checkbox" class="tgg-title" id="tgg-title-1">
-
-            <div class="faq-accordion-title">
-              <label for="tgg-title-1">
-                <h2>How many team members can I invite?</h2>
-                <span class="arrow-icon">
-                  <img src="images/icon-arrow-down.svg" type="img/svg+xml">
-                </span>
-              </label>
-            </div>
-
-            <div class="faq-accordion-content">
-              <p>You can invite up to 2 additional users on the Free plan. There is no limit on
-                team members for the Premium plan.</p>
-            </div>
-
-          </article> <!-- faq accordion -->
-
-          <article class="faq-accordion">
-
-            <input type= "checkbox" class="tgg-title" id="tgg-title-2">
-
-            <div class="faq-accordion-title">
-              <label for="tgg-title-2">
+              <div class="faq-accordion-title">
                 <h2>
-                  What is the maximum file upload size?
+                  <label for="tgg-title-1">
+                    How many team members can I invite?
+                    <span class="arrow-icon">
+                      <object data="images/icon-arrow-down.svg"
+                        type="image/svg+xml"></object>
+                    </span>
+                  </label>
                 </h2>
-                <span class="arrow-icon">
-                  <img src="images/icon-arrow-down.svg" type="img/svg+xml">
-                </span>
-              </label>
-            </div>
+              </div>
 
-            <div class="faq-accordion-content">
-              <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-            </div>
+              <div class="faq-accordion-content">
+                <p>You can invite up to 2 additional users on the Free plan.
+                  There is no limit on
+                  team members for the Premium plan.</p>
+              </div>
 
-          </article> <!-- faq accordion -->
+            </article> <!-- faq accordion -->
 
-          <article class="faq-accordion">
+            <article class="faq-accordion">
 
-            <input class="tgg-title" type="checkbox" id="tgg-title-3">
+              <input type="checkbox" class="tgg-title" id="tgg-title-2">
 
-            <div class="faq-accordion-title">
-              <label for="tgg-title-3">
+              <div class="faq-accordion-title">
                 <h2>
-                  How do I reset my password?
+                  <label for="tgg-title-2">
+                    What is the maximum file upload size?
+                    <span class="arrow-icon">
+                      <object data="images/icon-arrow-down.svg"
+                        type="image/svg+xml"></object>
+                    </span>
+                  </label>
                 </h2>
-                <span class="arrow-icon">
-                  <img src="images/icon-arrow-down.svg" type="img/svg+xml">
-                </span>
-              </label>
-            </div>
+              </div>
 
-            <div class="faq-accordion-content">
-              <p>Click “Forgot password” from the login page or “Change password” from your profile page.
-                A reset link will be emailed to you.</p>
-            </div>
+              <div class="faq-accordion-content">
+                <p>No more than 2GB. All files in your account must fit your
+                  allotted storage space.</p>
+              </div>
 
-          </article> <!-- faq accordion -->
+            </article> <!-- faq accordion -->
 
-          <article class="faq-accordion">
+            <article class="faq-accordion">
 
-            <input class="tgg-title" type="checkbox" id="tgg-title-4">
+              <input class="tgg-title" type="checkbox" id="tgg-title-3">
 
-            <div class="faq-accordion-title">
-              <label for="tgg-title-4">
+              <div class="faq-accordion-title">
                 <h2>
-                  Can I cancel my subscription?
+                  <label for="tgg-title-3">
+                    How do I reset my password?
+                    <span class="arrow-icon">
+                      <object data="images/icon-arrow-down.svg"
+                        type="image/svg+xml"></object>
+                    </span>
+                  </label>
                 </h2>
-                <span class="arrow-icon">
-                  <img src="images/icon-arrow-down.svg" type="img/svg+xml">
-                </span>
-              </label>
-            </div>
+              </div>
 
-            <div class="faq-accordion-content">
-              <p>  
-                Yes! Send us a message and we’ll process your request no questions asked.</p>
-            </div>
+              <div class="faq-accordion-content">
+                <p>Click “Forgot password” from the login page or “Change
+                  password” from your profile page.
+                  A reset link will be emailed to you.</p>
+              </div>
 
-          </article> <!-- faq accordion -->
+            </article> <!-- faq accordion -->
 
-          <article class="faq-accordion">
-            
-            <input class="tgg-title" type="checkbox" id="tgg-title-5">
+            <article class="faq-accordion">
 
-            <div class="faq-accordion-title">
-              <label for="tgg-title-5">
+              <input class="tgg-title" type="checkbox" id="tgg-title-4">
+
+              <div class="faq-accordion-title">
                 <h2>
-                  Do you provide additional support?
+                  <label for="tgg-title-4">
+                    Can I cancel my subscription?
+                    <span class="arrow-icon">
+                      <object data="images/icon-arrow-down.svg"
+                        type="image/svg+xml"></object>
+                    </span>
+                  </label>
                 </h2>
-                <span class="arrow-icon">
-                  <img src="images/icon-arrow-down.svg" type="img/svg+xml">
-                </span>
-              </label>
-            </div>
+              </div>
 
-            <div class="faq-accordion-content">
-              <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-            </div>
+              <div class="faq-accordion-content">
+                <p>
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.</p>
+              </div>
 
-          </article> <!-- faq accordion -->
+            </article> <!-- faq accordion -->
 
-        </div> <!-- faq articles -->
+            <article class="faq-accordion">
 
-      </main> <!-- faq -->
+              <input class="tgg-title" type="checkbox" id="tgg-title-5">
 
-    </div> <!-- faq card -->
+              <div class="faq-accordion-title">
+                <h2>
+                  <label for="tgg-title-5">
+                    Do you provide additional support?
+                    <span class="arrow-icon">
+                      <object data="images/icon-arrow-down.svg"
+                        type="image/svg+xml"></object>
+                    </span>
+                  </label>
+                </h2>
+              </div>
 
-  </div> <!-- card wrapper -->
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/Romerof/bookmarks">Javier Romero</a>.
-  </footer>
-</body>
+              <div class="faq-accordion-content">
+                <p> Chat and email support is available 24/7. Phone lines are
+                  open during normal business hours.</p>
+              </div>
+
+            </article> <!-- faq accordion -->
+
+          </div> <!-- faq articles -->
+
+        </main> <!-- faq -->
+
+      </div> <!-- faq card -->
+
+    </div> <!-- card wrapper -->
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a
+        href="https://www.frontendmentor.io/profile/Romerof/bookmarks">Javier
+        Romero</a>.
+    </footer>
+  </body>
 
 </html>
